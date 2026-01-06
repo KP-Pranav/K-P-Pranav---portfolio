@@ -1,0 +1,406 @@
+/* --- Global Styles --- */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    /* 🔑 UPDATED: Soft warm base background color */
+    background-color: #f5f5f0; 
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 20px;
+}
+
+/* --- Navigation & Header --- */
+.main-header {
+    background-color: #333;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #4CAF50;
+}
+
+/* --- Buttons (Interactive Elements) --- */
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.primary-button {
+    background-color: #4CAF50;
+    color: white;
+    border: 2px solid #4CAF50;
+}
+
+.primary-button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+.secondary-button {
+    background-color: white;
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+}
+
+.secondary-button:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+/* --- Hero Section Styling --- */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70vh;
+    /* 🔑 UPDATED: Soft hero background color */
+    background-color: #fcfcfc; 
+    border-bottom: 5px solid #4CAF50;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 40px;
+}
+
+/* 📸 Styles for the image container (400px size retained) */
+.hero-image {
+    width: 400px;
+    height: 400px;
+    background-color: #ddd;
+    border-radius: 50%;
+    overflow: hidden; 
+    border: 5px solid #4CAF50; 
+}
+
+/* Styles for the actual image inside the container */
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.hero-section h1 {
+    font-size: 3.5em;
+    margin-bottom: 0.2em;
+}
+
+.hero-section h4 { 
+    font-size: 1.2em;
+    color: #666;
+    font-weight: normal;
+    line-height: 1.4;
+}
+
+/* --- Skills Grid (Modern Layout) --- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.skill-item {
+    /* 🔑 UPDATED: Soft warm background for skill cards */
+    background-color: #fcfcfc;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #4CAF50;
+    transition: box-shadow 0.3s;
+}
+
+.skill-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.skill-item h4 {
+    color: #4CAF50;
+}
+
+/* --- INTERNSHIP SECTION STYLING --- */
+.internship-section {
+    /* Slightly darker than body background for subtle layering */
+    background-color: #f0f0f0; 
+}
+
+.internship-card {
+    /* 🔑 UPDATED: Soft warm background for internship cards */
+    background-color: #fcfcfc;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    border-left: 4px solid #4CAF50;
+}
+
+.internship-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.internship-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.internship-card li {
+    margin-bottom: 8px;
+    font-size: 1em; 
+}
+
+.internship-card h3 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 10px;
+}
+
+
+/* --- Certificate Display Styles --- */
+.certificate-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #4CAF50; 
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    border-bottom: 2px dashed #4CAF50;
+    transition: color 0.2s;
+}
+
+.certificate-link:hover {
+    color: #387e3c;
+}
+
+.hidden {
+    display: none; 
+}
+
+.certificate-container {
+    margin-top: 20px;
+    padding: 15px;
+    /* Uses soft hero background for the display box */
+    background-color: #f7f7f7; 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.cert-image {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* --- PROJECTS & CERTIFICATIONS SECTION STYLING --- */
+.portfolio-section { 
+    /* Slightly darker than body background for subtle layering */
+    background-color: #eee;
+}
+
+.project-card {
+    /* 🔑 UPDATED: Soft warm background for project/cert cards */
+    background-color: #fcfcfc;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+}
+
+.tagline {
+    font-style: italic;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+/* Styling for lists inside the Project/Certification Cards */
+.project-card ul {
+    list-style: disc; 
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.project-card li {
+    margin-bottom: 5px;
+}
+
+.project-card h3 {
+    font-size: 1.6em; 
+    color: #333;
+    margin-bottom: 15px;
+}
+
+
+/* --- Contact Form Styling --- */
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    /* 🔑 UPDATED: Soft warm background for contact form */
+    background-color: #fcfcfc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.contact-section label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-section input, .contact-section textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #ccc;
+    font-size: 0.9em;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-top: 30px;
+    }
+
+    .hero-content {
+        padding-right: 0;
+    }
+    
+    .nav-links {
+        gap: 15px;
+    }
+}
+
+/* LinkedIn Button Styling */
+.social-links {
+    margin-top: 20px;
+}
+
+.linkedin-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #0A66C2;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 24px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.linkedin-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(10, 102, 194, 0.4);
+}
+
+.github-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #24292e; /* GitHub color */
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 24px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.github-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(36, 41, 46, 0.4);
+}
+
+.gmail-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #EA4335; /* Gmail red */
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 24px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gmail-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(234, 67, 53, 0.4);
+}
